@@ -1,0 +1,14 @@
+graph00 - 3colorable
+graph01 - 3colorable
+graph02 - 3colorable
+graph03 - 3colorable
+graph04 - 3colorable
+graph05 - 3colorable
+graph06 - 3colorable
+graph07 - K_4 - known not 3colorable graph
+graph08 - not 3colorable
+graph09 - 3colorable
+graph10 - 3colorable
+graph11 - 3colorable
+graph12 - Grötzsch Graph - known not 3colorable graph
+graph13 - Wagner Graph - known 3colorable graph
