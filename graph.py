@@ -21,11 +21,10 @@ def draw_graph(G, coloring=None, title="Graph"):
     else:       # no coloring
         node_colors = 'lightblue'
     
-    plt.figure()  # Create a new figure for each graph
+    plt.figure()  
     nx.draw(G, pos, with_labels=True, node_color=node_colors, edge_color='gray')
     plt.title(title)
     
-    # Set the window title (Fixes "Figure 1" issue)
     plt.gcf().canvas.manager.set_window_title(title)
 
     plt.show()

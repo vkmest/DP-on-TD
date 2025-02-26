@@ -6,13 +6,13 @@ from tree_decomposition import compute_tree_decomposition
 from colorability import is_3_colorable
 
 if __name__ == "__main__":
-    file_path = "graphs/graph10.txt"  # change this to your test file (graph00-graph13)
+    file_path = "graphs/graph12.txt"  # change this to your test file (graph00-graph13)
 
     G = read_graph(file_path)   # read graph
     draw_graph(G, title="Starting Graph")
 
     treewidth, tree_decomposition = compute_tree_decomposition(G)  # compute tw and td
-     # Print the tree decomposition (each bag)
+    
     print("Tree Decomposition:")
     for i, bag in enumerate(tree_decomposition.nodes()):
         print(f"Bag {i}: {tree_decomposition.nodes[bag]['bag']}")
@@ -34,7 +34,3 @@ if __name__ == "__main__":
     dsatur_coloring = nx.coloring.greedy_color(G, strategy="DSATUR")
     dsatur_chromatic = max(dsatur_coloring.values()) + 1
     print(f"Approximate Chromatic Number (DSATUR): {dsatur_chromatic}")
-
-
-#12 is Grötzsch Graph 
-#13 is Wagner Graph
