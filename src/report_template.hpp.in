@@ -1,0 +1,2 @@
+#pragma once
+inline constexpr const char* report_template=R"_TD3_REPORT_(@TD3_REPORT_HTML@)_TD3_REPORT_";
